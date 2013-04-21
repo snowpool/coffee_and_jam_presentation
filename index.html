@@ -17,10 +17,22 @@
 		<link rel="stylesheet" href="css/reveal.min.css">
 		<link rel="stylesheet" href="css/theme/default.css" id="theme">
     <style>
-      body {
-        background-image: url('logo_large.png');
+      html.firstslide body {
+        background-image: url('./images/logo_large.png');
         background-position:center;
         background-size: 60%;
+        background-repeat: no-repeat;
+      }
+      html.itch body {
+        background-image: url('./images/itching.gif');
+        background-position:center;
+        background-size: 35%;
+        background-repeat: no-repeat;
+      }
+      html.success body {
+        background-image: url('./images/carpools.png');
+        background-position:center;
+        background-size: 75%;
         background-repeat: no-repeat;
       }
     </style>
@@ -32,30 +44,49 @@
 
 			<div class="slides">
 
+				<section data-state="firstslide">
+        </section>
+        <!--
 				<section>
 					<h1>Snowpool</h1>
 					<h3>Coffee & Jam (yum!)</h3>
 					<h5>Ministry of Awesome</h5>
           <p><img src="./logo.png" alt="title" /></p>
 				</section>
+        -->
 				<section>
 					<h1>Background</h1>
 				</section>
-				<section>
-					<h1>Itch</h1>
+
+				<section data-state="itch">
 				</section>
+        <!--
 				<section>
 					<h1>Friends</h1>
-					<h3>(lots!)</h3>
+          <p>
+            <video width="640" height="480" controls>
+              <source src="./movie.mp4" type="video/mp4">
+              <source src="./movie.webm" type="video/webm">
+              <source src="./movie.ogm" type="video/ogv">
+            </video>
+          </p>
 				</section>
+        -->
 				<section>
 					<h1>Growth</h1>
-					<h3>Kingswood Skis</h3>
+          <center>
+          <table border="0">
+            <tr>
+              <td><img src="./images/old_logo.gif" alt="" /></td>
+              <td><h2> => </h2>
+              <td><img src="./images/new_logo.jpg" alt="" /></td>
+            </tr>
+          </table>
+          </center>
 				</section>
-				<section>
-					<h1>Compromise</h1>
+				<section data-state="success">
 				</section>
-				<section>
+				<section data-state="alert">
 					<h1>Niggles</h1>
 				</section>
 				<section>
